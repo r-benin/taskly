@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  background-color: #f4f5fa;
+  font-family: Poppins;
+  padding: 1%;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-size: 3rem;
+  color: #13287e;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input[type="text"] {
+  font-family: Poppins;
+  color: rgba(58, 53, 65, 0.54);
+  border-radius: 500px;
+  border: 1px solid rgba(58, 53, 65, 0.54);
+  width: 80vw;
+  height: 2.5rem;
+  padding: 5px 10px 5px 1em;
+  font-size: 1.5em;
+  transition: all linear 0.3s;
+}
+
+input[type="text"]:focus {
+  border: 1px solid rgba(58, 53, 65, 0.8);
+  color: rgba(58, 53, 65, 0.8);
+  outline: none;
+  box-shadow: 0px 0px 10px 5px rgba(65, 105, 225, 0.2);
+}
+
+.submit-button {
+  position: absolute;
+  right: 0;
+  margin-right: 0.5rem;
+  height: 2.45rem;
+  width: 2.45rem;
+  background-color: #13287e;
+  border: solid 1px #13287e;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: linear all 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #d3dfff;
+}
+
+.submit-button:active {
+  scale: 0.5;
+}
+
+.button-img {
+  height: 1.9em;
+  width: 1.9em;
+  padding: 0.55em;
+  margin-left: 4px;
+  filter: invert(100%);
+}
+
+.button-img:hover {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(46%) saturate(4036%) hue-rotate(223deg) brightness(93%) contrast(104%);
+}
+
+.task-list {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.task {
+  border: 1px solid rgba(58, 53, 65, 0.54);
+  border-radius: 5px;
+  min-width: 15rem;
+  max-width: 20vw;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(58, 53, 65, 0.2);
+  transition: all linear 0.1s;
+}
+
+.task:hover {
+  scale: 1.05;
+}
+
+.task-buttons {
+  background-color: #13287e;
+  border-bottom: 1px solid rgba(58, 53, 65, 0.54);
+  height: 2em;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  color: white;
+  margin: 5px 10px 0px 10px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+
+.icon:last-child {
+  position: absolute;
+  right: 0;
+}
+
+.icon:hover {
+  scale: 1.4;
+}
+
+.task-content {
+  margin: 10px;
+}
