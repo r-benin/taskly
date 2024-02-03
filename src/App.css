@@ -89,9 +89,26 @@ input[type="text"]:focus {
   width: 90%;
 }
 
+.done-task {
+  border: 1px solid rgba(58, 53, 65, 0.54);
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 15rem;
+  max-width: 20vw;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(58, 53, 65, 0.2);
+  transition: all linear 0.1s;
+  opacity: 0.5;
+}
+
+.done-task:hover {
+  scale: 1.05;
+}
+
 .task {
   border: 1px solid rgba(58, 53, 65, 0.54);
   border-radius: 5px;
+  overflow: hidden;
   min-width: 15rem;
   max-width: 20vw;
   background-color: white;
@@ -130,4 +147,26 @@ input[type="text"]:focus {
 
 .task-content {
   margin: 10px;
+}
+
+.edit-content {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.input-edit-content {
+  font-family: 'Poppins';
+  width: 95%;
+  height: 1rem;
+  font-size: 1rem;
+  border: 1px solid rgba(58, 53, 65, 0.54);
+  resize: none;
+}
+
+.edit-tooltip {
+  opacity: 0.5;
+  margin-top: 5px;
 }
